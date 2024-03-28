@@ -21,11 +21,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+// Route::get('/', function () {
+//     return view('home');
+// })->name('home');
 
-Route::get('/dashboard', function () {
+Route::get('/', function () {
     return view('dashboard.dashboard')
         ->with([
             'title' => 'Dashboard',
