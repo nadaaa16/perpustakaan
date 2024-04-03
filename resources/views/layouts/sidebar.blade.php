@@ -1,13 +1,13 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="{{ route('home') }}">
+            <a href="{{ route('dashboard') }}">
                Perpustakaan
             </a>
         </div>
-        <div class="sidebar-brand sidebar-brand-sm">
+        {{-- <div class="sidebar-brand sidebar-brand-sm">
             <a href="{{ route('home') }}">.ID</a>
-        </div>
+        </div> --}}
         <ul class="sidebar-menu mb-5">
             @if (Auth::user()->role === 'admin' || Auth::user()->role === 'pustakawan')
                 <li class="menu-header">Dashboard</li>
